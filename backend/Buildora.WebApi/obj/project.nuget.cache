@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mUGGd626I0U=",
+  "success": true,
+  "projectFilePath": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/User/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/User/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

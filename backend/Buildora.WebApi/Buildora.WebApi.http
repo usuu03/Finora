@@ -1,0 +1,6 @@
+@Buildora.WebApi_HostAddress = http://localhost:5212
+
+GET {{Buildora.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
