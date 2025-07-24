@@ -3316,11 +3316,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
+      "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
       "projectName": "Buildora.WebApi",
-      "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
+      "projectPath": "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
       "packagesPath": "/Users/User/.nuget/packages/",
-      "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/obj/",
+      "outputPath": "/Users/User/Documents/Finora/backend/Buildora.WebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -3336,14 +3336,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj": {
-              "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj"
+            "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj": {
+              "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj"
             },
-            "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
-              "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj"
+            "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
+              "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj"
             },
-            "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
-              "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj"
+            "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+              "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj"
             }
           }
         }

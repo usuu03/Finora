@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Buildora.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd7d68721023535277c6e2930171d7a0dd34c469")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214c149ac047d9f3d0f1483d2e47bb1bca7dd667")]
 [assembly: System.Reflection.AssemblyProductAttribute("Buildora.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Buildora.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

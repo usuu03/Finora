@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj",
+      "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj",
       "projectName": "Buildora.Shared",
-      "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj",
+      "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj",
       "packagesPath": "/Users/User/.nuget/packages/",
-      "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/obj/",
+      "outputPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/User/.nuget/NuGet/NuGet.Config"

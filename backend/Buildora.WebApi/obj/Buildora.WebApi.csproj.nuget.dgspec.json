@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj": {}
+    "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj": {}
   },
   "projects": {
-    "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj": {
+    "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj",
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj",
         "projectName": "Buildora.Application",
-        "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj",
+        "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.Application/obj/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Buildora.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -27,11 +27,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/User/Desktop/Buildora/backend/Buildora.Domain/Buildora.Domain.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Domain/Buildora.Domain.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Domain/Buildora.Domain.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Domain/Buildora.Domain.csproj"
               },
-              "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "/Users/User/Desktop/Buildora/backend/Buildora.Domain/Buildora.Domain.csproj": {
+    "/Users/User/Documents/Finora/backend/Buildora.Domain/Buildora.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.Domain/Buildora.Domain.csproj",
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.Domain/Buildora.Domain.csproj",
         "projectName": "Buildora.Domain",
-        "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Domain/Buildora.Domain.csproj",
+        "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Domain/Buildora.Domain.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.Domain/obj/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Buildora.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -104,8 +104,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
+    "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj",
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj",
         "projectName": "Buildora.Infrastructure",
-        "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj",
+        "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/obj/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -168,11 +168,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj"
               },
-              "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj"
               }
             }
           }
@@ -222,14 +222,14 @@
         }
       }
     },
-    "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+    "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj",
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj",
         "projectName": "Buildora.Shared",
-        "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj",
+        "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/obj/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -282,14 +282,14 @@
         }
       }
     },
-    "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj": {
+    "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
         "projectName": "Buildora.WebApi",
-        "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
+        "projectPath": "/Users/User/Documents/Finora/backend/Buildora.WebApi/Buildora.WebApi.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Desktop/Buildora/backend/Buildora.WebApi/obj/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Buildora.WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -305,14 +305,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Application/Buildora.Application.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Application/Buildora.Application.csproj"
               },
-              "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Infrastructure/Buildora.Infrastructure.csproj"
               },
-              "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj": {
-                "projectPath": "/Users/User/Desktop/Buildora/backend/Buildora.Shared/Buildora.Shared.csproj"
+              "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Buildora.Shared/Buildora.Shared.csproj"
               }
             }
           }
