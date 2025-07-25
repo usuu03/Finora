@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Buildora.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214c149ac047d9f3d0f1483d2e47bb1bca7dd667")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea29a12df0be5cfeb4e24a782b8b3689c062ae76")]
 [assembly: System.Reflection.AssemblyProductAttribute("Buildora.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Buildora.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

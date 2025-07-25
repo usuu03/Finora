@@ -1,6 +1,9 @@
+using System.Reflection;
+using Buildora.Application.Common.Interfaces;
 using Buildora.Infrastructure.Context;
 using Buildora.Infrastructure.Seeding;
 using Microsoft.EntityFrameworkCore;
+
 
 
 // Sets up the App configuration
@@ -16,7 +19,16 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(opt => 
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddCors();
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(Assembly.Load("Buildora.Application"));
+});
+
+// Register IAppDbContext as AppDbContext.
+builder.Services.AddScoped<IAppDbContext, AppDbContext>();
+
 
 // Builds the app
 var app = builder.Build();
