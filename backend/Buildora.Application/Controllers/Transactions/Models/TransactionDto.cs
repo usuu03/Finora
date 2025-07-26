@@ -12,6 +12,7 @@ public class TransactionDto
 
     public decimal Amount { get; set; }
     public Category Category { get; set; }
+    public DateTime AddedAt { get; set; }
     
 
 }

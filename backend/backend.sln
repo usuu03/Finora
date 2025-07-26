@@ -11,15 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildora.Application", "Bui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildora.Infrastructure", "Buildora.Infrastructure\Buildora.Infrastructure.csproj", "{BC48E92C-7AEB-419F-BD02-5D41B6AA103E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildora.Shared", "Buildora.Shared\Buildora.Shared.csproj", "{FE4F9D8A-9E9B-449F-B2DC-550FCBD506A4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0E966D1A-80C0-4FD4-8D71-0C4A76A2C2D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,9 +33,8 @@ Global
 		{BC48E92C-7AEB-419F-BD02-5D41B6AA103E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC48E92C-7AEB-419F-BD02-5D41B6AA103E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC48E92C-7AEB-419F-BD02-5D41B6AA103E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE4F9D8A-9E9B-449F-B2DC-550FCBD506A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE4F9D8A-9E9B-449F-B2DC-550FCBD506A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE4F9D8A-9E9B-449F-B2DC-550FCBD506A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE4F9D8A-9E9B-449F-B2DC-550FCBD506A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

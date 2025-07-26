@@ -12,9 +12,8 @@ public class AppDbContext : DbContext, IAppDbContext
 
     public DbSet<Transaction> Transactions { get; set; }
 
-    IQueryable<Transaction> IAppDbContext.Transactions => Transactions;
 
-    public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         return await base.SaveChangesAsync(cancellationToken);
     }

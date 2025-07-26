@@ -1,5 +1,6 @@
+using Buildora.Domain.Common;
 using Buildora.Domain.Enums;
-using Buildora.Shared.Domain;
+
 
 namespace Buildora.Domain.Entities;
 

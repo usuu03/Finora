@@ -23,6 +23,7 @@ public class GetAllTransactionsQueryHandler : IRequestHandler<GetAllTransactions
              .Select(t => new TransactionDto
              {
                  Id = t.Id,
+                 Name = t.Name,
                  Amount = t.Amount,
                  Date = t.Date,
                  Description = t.Description

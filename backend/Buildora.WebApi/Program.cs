@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Text.Json.Serialization;
 using Buildora.Application.Common.Interfaces;
 using Buildora.Infrastructure.Context;
 using Buildora.Infrastructure.Seeding;
@@ -25,6 +26,13 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(Assembly.Load("Buildora.Application"));
 });
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
 
 // Register IAppDbContext as AppDbContext.
 builder.Services.AddScoped<IAppDbContext, AppDbContext>();

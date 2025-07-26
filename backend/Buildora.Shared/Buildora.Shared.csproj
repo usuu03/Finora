@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Application/Commands/" />
     <Folder Include="Application/Common/Interfaces/" />
+    <Folder Include="Domain/" />
     <Folder Include="Infrastructure/" />
     <Folder Include="WebApi/" />
   </ItemGroup>
