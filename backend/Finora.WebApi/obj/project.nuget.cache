@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/l9kHcB7P2o=",
+  "success": true,
+  "projectFilePath": "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/User/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/User/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

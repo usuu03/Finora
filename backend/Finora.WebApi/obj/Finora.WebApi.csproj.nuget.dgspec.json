@@ -1,0 +1,272 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj": {}
+  },
+  "projects": {
+    "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj",
+        "projectName": "Finora.Application",
+        "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj",
+        "packagesPath": "/Users/User/.nuget/packages/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Finora.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/User/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+        "projectName": "Finora.Domain",
+        "projectPath": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+        "packagesPath": "/Users/User/.nuget/packages/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Finora.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/User/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
+        "projectName": "Finora.Infrastructure",
+        "projectPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
+        "packagesPath": "/Users/User/.nuget/packages/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/User/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj",
+        "projectName": "Finora.WebApi",
+        "projectPath": "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj",
+        "packagesPath": "/Users/User/.nuget/packages/",
+        "outputPath": "/Users/User/Documents/Finora/backend/Finora.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/User/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj"
+              },
+              "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj": {
+                "projectPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

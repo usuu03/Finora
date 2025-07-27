@@ -1,0 +1,209 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Finora.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Finora.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Finora.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Finora.Application.dll": {}
+        }
+      },
+      "Finora.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Finora.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Finora.Domain.dll": {}
+        }
+      },
+      "Finora.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Finora.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Finora.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Finora.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "sha512": "FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Finora.Application/1.0.0": {
+      "type": "project",
+      "path": "../Finora.Application/Finora.Application.csproj",
+      "msbuildProject": "../Finora.Application/Finora.Application.csproj"
+    },
+    "Finora.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Finora.Domain/Finora.Domain.csproj",
+      "msbuildProject": "../Finora.Domain/Finora.Domain.csproj"
+    },
+    "Finora.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Finora.Infrastructure/Finora.Infrastructure.csproj",
+      "msbuildProject": "../Finora.Infrastructure/Finora.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Finora.Application >= 1.0.0",
+      "Finora.Infrastructure >= 1.0.0",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/User/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj",
+      "projectName": "Finora.WebApi",
+      "projectPath": "/Users/User/Documents/Finora/backend/Finora.WebApi/Finora.WebApi.csproj",
+      "packagesPath": "/Users/User/.nuget/packages/",
+      "outputPath": "/Users/User/Documents/Finora/backend/Finora.WebApi/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/User/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
+              "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj"
+            },
+            "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj": {
+              "projectPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
