@@ -2,9 +2,12 @@ using System;
 
 namespace Finora.Domain.Common;
 
-public class BaseEntity<TEntity>
-{
-    Guid Id { get; set; }
-    DateTime CreatedAt { get; set; }
-    DateTime DeletedAt { get; set; }
+public abstract class BaseEntity<TEntity> where TEntity : BaseEntity<TEntity>
+{ 
+    public Guid Id { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime DeletedAt { get; set; }
+
+    public abstract bool Equals(TEntity? other);
+
 }

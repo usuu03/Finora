@@ -10,4 +10,15 @@ public class Transaction : BaseEntity<Transaction>
     public string Description { get; set; } = string.Empty;
     public TransactionType Type { get; set; }
     public DateTime Date { get; set; }
+
+    public override bool Equals(Transaction? other)
+    {
+        return other is not null &&
+               Id == other.Id &&
+               Amount == other.Amount &&
+               Category == other.Category &&
+               Description == other.Description &&
+               Type == other.Type &&
+               Date == other.Date;
+    }
 }
