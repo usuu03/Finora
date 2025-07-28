@@ -1,5 +1,6 @@
 using Finora.Domain;
 using Finora.Domain.Common.Enums;
+using Finora.Domain.Entities;
 using Finora.Infrastructure.Context;
 
 namespace Finora.Infrastructure.Seeding;

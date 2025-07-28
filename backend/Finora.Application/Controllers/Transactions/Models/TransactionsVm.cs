@@ -1,4 +1,4 @@
-namespace Finora.Application.Controllers.Transaction.Models;
+namespace Finora.Application.Controllers.Transactions.Models;
 
 public record  TransactionVm
 {

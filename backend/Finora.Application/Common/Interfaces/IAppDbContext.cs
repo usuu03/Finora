@@ -1,7 +1,8 @@
 using Finora.Domain;
+using Finora.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Finora.Application.Common.Interfaes;
+namespace Finora.Application.Common.Interfaces;
 
 public interface IAppDbContext
 {

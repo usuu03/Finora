@@ -1,6 +1,7 @@
 using System;
 using Finora.Domain;
 using Finora.Domain.Common;
+using Finora.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -13,7 +14,7 @@ public class TransactionConfiguration : IEntityTypeConfiguration<Transaction>
     {
         builder.ToTable("transactions");
         builder.Property(t => t.CreatedAt)
-            .HasDefaultValueSql("NOW()")
+            .HasDefaultValueSql("CURRENT_TIMESTAMP")
             .ValueGeneratedOnAdd()
             .Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
 

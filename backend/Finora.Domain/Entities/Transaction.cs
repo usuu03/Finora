@@ -1,7 +1,7 @@
 using Finora.Domain.Common;
 using Finora.Domain.Common.Enums;
 
-namespace Finora.Domain;
+namespace Finora.Domain.Entities;
 
 public class Transaction : BaseEntity<Transaction>
 {

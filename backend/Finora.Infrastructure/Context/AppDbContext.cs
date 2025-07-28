@@ -1,5 +1,6 @@
-using Finora.Application.Common.Interfaes;
+using Finora.Application.Common.Interfaces;
 using Finora.Domain;
+using Finora.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Finora.Infrastructure.Context;

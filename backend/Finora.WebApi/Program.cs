@@ -1,6 +1,6 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
-using Finora.Application.Common.Interfaes;
+using Finora.Application.Common.Interfaces;
 using Finora.Infrastructure.Context;
 using Finora.Infrastructure.Seeding;
 using Microsoft.EntityFrameworkCore;

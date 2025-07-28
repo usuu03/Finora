@@ -1,10 +1,11 @@
 using System;
-using Finora.Application.Common.Interfaes;
-using Finora.Application.Controllers.Transaction.Models;
+using Finora.Application.Common.Interfaces;
+using Finora.Application.Controllers.Transactions.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Finora.Application.Controllers.Transaction.GetAll;
+namespace Finora.Application.Controllers.Transactions.GetAll;
+
 
 public record GetAllTransactionsQuery : IRequest<TransactionVm>;
 public class GetAllTransactionsQueryHandler(IAppDbContext db) : IRequestHandler<GetAllTransactionsQuery, TransactionVm>
