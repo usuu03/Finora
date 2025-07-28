@@ -1,41 +1,71 @@
+using System.Reflection;
+using System.Text.Json.Serialization;
+using Finora.Application.Common.Interfaes;
+using Finora.Infrastructure.Context;
+using Finora.Infrastructure.Seeding;
+using Microsoft.EntityFrameworkCore;
+
+
+
+// Sets up the App configuration
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 
+// Registers Controllers as services tells .NET to look for controllers and use them for HTTP requests
+builder.Services.AddControllers();
+
+// Tells .NET to use AppDbContext to talk to the database
+// and use SQLite as the database provider. The connection string is read from the appsettings.json file.
+builder.Services.AddDbContext<AppDbContext>(opt => 
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddCors();
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(Assembly.Load("Finora.Application"));
+});
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
+
+// Register IAppDbContext as AppDbContext.
+builder.Services.AddScoped<IAppDbContext, AppDbContext>();
+
+
+// Builds the app
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Maps routes like /api/activites to controller methods.
+// similar to defining URLs in Django
+app.MapControllers();
+
+// Creates a scope so we can get services like the database context
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+
+
+try
 {
-    app.MapOpenApi();
+    // Gets the AppDbContext 
+    var context = services.GetRequiredService<AppDbContext>();
+    // Applies any pending to the database 
+    await context.Database.MigrateAsync();
+    //Adds any initial data to the database
+    await DbInitializer.SeedData(context);
+}
+// Log any errors that occur during migration or seeding
+catch (System.Exception)
+{
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    logger.LogError("An error occurred during migration or seeding the database.");
+    throw;
 }
 
-app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
+// Start the app and listen for incoming HTTP requests
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
