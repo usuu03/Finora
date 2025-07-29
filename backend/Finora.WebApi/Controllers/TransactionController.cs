@@ -1,3 +1,4 @@
+using Finora.Application.Controllers.Transactions.Get;
 using Finora.Application.Controllers.Transactions.GetAll;
 using Finora.Application.Controllers.Transactions.Upsert;
 using Finora.WebApi.Common;
@@ -10,6 +11,9 @@ public class TransactionController : ApiControllerBase
 {
     [HttpGet]
     public Task<IActionResult> Get([FromQuery] GetAllTransactionsQuery query) => Send(query);
+
+    [HttpGet("{id}")]
+    public Task<IActionResult> Get([FromRoute] GetTransactionQuery query) => Send(query);
 
     [HttpPost]
     public Task Upsert([FromBody] UpsertTransactionCommand command)
