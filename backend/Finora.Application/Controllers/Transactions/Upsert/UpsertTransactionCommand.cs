@@ -1,4 +1,5 @@
 using System;
+using Finora.Application.Common.Handlers;
 using Finora.Application.Common.Interfaces;
 using Finora.Domain.Common.Enums;
 using Finora.Domain.Entities;
@@ -6,7 +7,7 @@ using MediatR;
 
 namespace Finora.Application.Controllers.Transactions.Upsert;
 
-public class UpsertTransactionCommand : IRequest, IUpsertCommand<Transaction>
+public class UpsertTransactionCommand : IRequest<UpsertTransactionResponse>, IUpsertCommand<Transaction>
 {
     public Guid Id { get; set; }
     public decimal Amount { get; set; }
