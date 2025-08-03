@@ -12,6 +12,9 @@ public class DbInitializer
         // Check if there are any transaction records in the database
         if (context.Transactions.Any()) return;
 
+        context.Transactions.RemoveRange(context.Transactions);
+        await context.SaveChangesAsync();
+
         var transactions = new List<Transaction>
         {
             new()
@@ -22,6 +25,7 @@ public class DbInitializer
                 Category =  "Groceries",
                 Type = TransactionType.Expense,
                 CreatedAt = DateTime.Now.AddDays(-7),
+                DeletedAt = null
             },
             new()
             {
@@ -31,6 +35,7 @@ public class DbInitializer
                 Category =  "Utilities",
                 Type = TransactionType.Expense,
                 CreatedAt = DateTime.Now.AddDays(-5),
+                DeletedAt = null
             },
             new()
             {
@@ -40,6 +45,7 @@ public class DbInitializer
                 Category =  "Entertainment",
                 Type = TransactionType.Expense,
                 CreatedAt = DateTime.Now.AddDays(-3),
+                DeletedAt = null
             },
             new()
             {
@@ -49,6 +55,7 @@ public class DbInitializer
                 Category =  "Transportation",
                 Type = TransactionType.Expense,
                 CreatedAt = DateTime.Now.AddDays(-1),
+                DeletedAt = null
             },
             new()
             {
@@ -58,6 +65,7 @@ public class DbInitializer
                 Category =  "Health",
                 Type = TransactionType.Expense,
                 CreatedAt = DateTime.Now,
+                DeletedAt = null
             },
             new()
             {
@@ -67,6 +75,7 @@ public class DbInitializer
                 Category =  "Income",
                 Type = TransactionType.Income,
                 CreatedAt = DateTime.Now,
+                DeletedAt = null
             }
         };
 

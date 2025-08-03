@@ -1,9 +1,10 @@
 using Finora.Domain.Common;
 using Finora.Domain.Common.Enums;
+using Finora.Domain.Common.Interfaces;
 
 namespace Finora.Domain.Entities;
 
-public class Transaction : BaseEntity<Transaction>
+public class Transaction : BaseEntity<Transaction>, IHaveSoftDelete
 {
     public decimal Amount { get; set; }
     public string Category { get; set; } = string.Empty;

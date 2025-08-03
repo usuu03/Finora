@@ -1,4 +1,5 @@
 using System;
+using Finora.Application.Common.Extensions;
 using Finora.Application.Common.Interfaces;
 using Finora.Application.Controllers.Transactions.Models;
 using MediatR;
@@ -13,6 +14,8 @@ public class GetAllTransactionsQueryHandler(IAppDbContext db) : IRequestHandler<
     public async Task<TransactionVm> Handle(GetAllTransactionsQuery request, CancellationToken cancellationToken)
     {
         var transactions = await db.Transactions
+            .AsNoTracking()
+            .FilterActive()
             .Select(t => new TransactionDto
             {
                 Id = t.Id,
