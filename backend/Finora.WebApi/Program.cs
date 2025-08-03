@@ -3,8 +3,8 @@ using System.Text.Json.Serialization;
 using Finora.Application.Common.Interfaces;
 using Finora.Infrastructure.Context;
 using Finora.Infrastructure.Seeding;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-
 
 
 // Sets up the App configuration
@@ -36,6 +36,8 @@ builder.Services.AddControllers()
 
 // Register IAppDbContext as AppDbContext.
 builder.Services.AddScoped<IAppDbContext, AppDbContext>();
+
+builder.Services.AddValidatorsFromAssembly(Assembly.Load("Finora.Application"));
 
 
 // Builds the app

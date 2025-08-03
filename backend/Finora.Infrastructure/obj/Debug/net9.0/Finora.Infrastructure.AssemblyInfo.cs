@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Finora.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c192cf4f089d80faa95de0b0eb5441287800809c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+397ac532a648f2e4f5b853077d09f9723a39fe3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Finora.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Finora.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
