@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // Registers Controllers as services tells .NET to look for controllers and use them for HTTP requests
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 
 // Tells .NET to use AppDbContext to talk to the database
 // and use SQLite as the database provider. The connection string is read from the appsettings.json file.

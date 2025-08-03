@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Finora.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aabeda65a65bd23bb7abc3a8f0e7b6d1a4bd9648")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59d42dc8b9650967551cbd4839ed43e63f9fe3d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Finora.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Finora.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

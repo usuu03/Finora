@@ -16,10 +16,9 @@ public class TransactionController : ApiControllerBase
     public Task<IActionResult> Get([FromRoute] GetTransactionQuery query) => Send(query);
 
     [HttpPost]
-    public Task Upsert([FromBody] UpsertTransactionCommand command)
-	{
-		return Mediator.Send(command);
-	}
+    public Task<IActionResult> Upsert([FromBody] UpsertTransactionCommand command)
+        => Send(command);
+
    
    
 }
