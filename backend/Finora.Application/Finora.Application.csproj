@@ -17,4 +17,11 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers/Categories/" />
+    <Folder Include="Controllers/Goal/" />
+    <Folder Include="Controllers/StaticAdviceRule/" />
+    <Folder Include="Controllers/User/" />
+  </ItemGroup>
+
 </Project>
