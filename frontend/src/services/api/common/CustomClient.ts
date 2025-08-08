@@ -7,11 +7,7 @@ export interface CustomTsRestClientArgs extends ApiFetcherArgs {
 }
 
 export const customTsRestClient = async (args: CustomTsRestClientArgs) => {
-    if (args.silent) {
-        return tsRestFetchApi(args);
-    }
+    const 
 
-    const response = await tsRestFetchApi(args);
-    const id = args.path;
-    const requestId = args.path.split("/").pop() || "";
+
 }
