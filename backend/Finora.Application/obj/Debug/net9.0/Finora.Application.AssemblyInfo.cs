@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Finora.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef50c42e83da660583a05ef7d6c46f764967483e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62e33440ba67d98818e5298dbf5bbbba188d6a3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Finora.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Finora.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
