@@ -1,10 +1,18 @@
 using System.Reflection;
+using System.Text;
 using System.Text.Json.Serialization;
 using Finora.Application.Common.Interfaces;
+using Finora.Domain.Entities;
 using Finora.Infrastructure.Context;
 using Finora.Infrastructure.Seeding;
+using Finora.Infrastructure.Services.Auth;
+using Finora.Infrastructure.Services.Auth.Models;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 
 // Sets up the App configuration
@@ -32,6 +40,65 @@ builder.Services.AddControllers()
     {
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
+
+// 4.1 Bind Jwt options
+var jwtOptions = builder.Configuration.GetSection(JwtOptions.SectionName).Get<JwtOptions>()
+                 ?? throw new InvalidOperationException("Jwt options missing");
+builder.Services.AddSingleton(jwtOptions);
+
+// 4.2 Authentication – JWT Bearer
+builder.Services
+    .AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = true;
+        options.SaveToken = false;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = jwtOptions.Issuer,
+
+            ValidateAudience = true,
+            ValidAudience = jwtOptions.Audience,
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtOptions.SigningKey)
+            ),
+
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+
+// 4.3 Authorization – secure by default
+builder.Services.AddAuthorization(opt =>
+{
+    opt.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .AddAuthenticationSchemes("Bearer")
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
+// 4.4 TokenService
+builder.Services.AddSingleton<ITokenService, TokenService>();
+
+
+
+// Adds the Identity service to the DI container
+// Configures Identity to use the User class and the AppDbContext class
+builder.Services.AddIdentityApiEndpoints<AppUser>(opt =>
+{
+    opt.User.RequireUniqueEmail = true;
+    opt.Password.RequiredLength = 12;
+})
+.AddRoles<IdentityRole<Guid>>()
+.AddEntityFrameworkStores<AppDbContext>();
 
 
 // Register IAppDbContext as AppDbContext.
@@ -68,6 +135,9 @@ catch (System.Exception)
     logger.LogError("An error occurred during migration or seeding the database.");
     throw;
 }
+
+app.UseAuthentication();   
+app.UseAuthorization();
 
 // Start the app and listen for incoming HTTP requests
 app.Run();

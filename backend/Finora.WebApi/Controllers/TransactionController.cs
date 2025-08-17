@@ -3,7 +3,6 @@ using Finora.Application.Controllers.Transactions.Get;
 using Finora.Application.Controllers.Transactions.GetAll;
 using Finora.Application.Controllers.Transactions.Upsert;
 using Finora.WebApi.Common;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Finora.WebApi.Controllers;
