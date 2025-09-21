@@ -797,11 +797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+      "projectUniqueName": "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj",
       "projectName": "Finora.Domain",
-      "projectPath": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+      "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj",
       "packagesPath": "/Users/User/.nuget/packages/",
-      "outputPath": "/Users/User/Documents/Finora/backend/Finora.Domain/obj/",
+      "outputPath": "/Users/User/Desktop/Finora/backend/Finora.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -810,7 +810,6 @@
         "net9.0"
       ],
       "sources": {
-        "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -829,7 +828,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -856,7 +855,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,6 +3,7 @@ using Finora.Application.Controllers.Transactions.Get;
 using Finora.Application.Controllers.Transactions.GetAll;
 using Finora.Application.Controllers.Transactions.Upsert;
 using Finora.WebApi.Common;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Finora.WebApi.Controllers;
@@ -10,6 +11,7 @@ namespace Finora.WebApi.Controllers;
 public class TransactionController : ApiControllerBase
 {
     [HttpGet]
+    [AllowAnonymous]
     public Task<IActionResult> Get([FromQuery] GetAllTransactionsQuery query) => Send(query);
 
     [HttpGet("{id}")]
