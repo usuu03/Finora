@@ -1,37 +1,30 @@
-name: "CI: Backend Service"
+name: .NET CI
+
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
-    paths:
-      - 'backend/'
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      # Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v3
+      # Setup .NET
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: '9.0.x'   # match your SDK version
 
-      - name: Run Build
-        run: |
-          cd backend/Core.WebApi
-          dotnet restore
-          dotnet build --configuration Release --no-restore
+      # Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore ./backend/backend.sln
 
-      - name: Run Tests
-        run: |
-          cd backend/tests/Finora.Infrastructure.Tests
-          dotnet restore
-          dotnet test --configuration Release --no-restore --logger "trx;LogFileName=TestResults.trx"
-
-      - name: Test Report
-        uses: dorny/test-reporter@v2
-        if: success() || failure()
-        with:
-          name: Core Service Tests
-          path: backend/tests/Finora.Infrastructure.Tests/TestResults/TestResults.trx
-          reporter: dotnet-trx
+      # Build solution
+      - name: Build
+        run: dotnet build ./backend/backend.sln --no-restore --configuration Release
