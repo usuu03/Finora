@@ -1,0 +1,30 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup .NET
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'   # match your SDK version
+
+      # Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore ./backend/backend.sln
+
+      # Build solution
+      - name: Build
+        run: dotnet build ./backend/backend.sln --no-restore --configuration Release
