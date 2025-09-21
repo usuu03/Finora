@@ -1,0 +1,37 @@
+name: "CI: Backend Service"
+on:
+  pull_request:
+    paths:
+      - 'backend/'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Run Build
+        run: |
+          cd backend/Core.WebApi
+          dotnet restore
+          dotnet build --configuration Release --no-restore
+
+      - name: Run Tests
+        run: |
+          cd backend/tests/Finora.Infrastructure.Tests
+          dotnet restore
+          dotnet test --configuration Release --no-restore --logger "trx;LogFileName=TestResults.trx"
+
+      - name: Test Report
+        uses: dorny/test-reporter@v2
+        if: success() || failure()
+        with:
+          name: Core Service Tests
+          path: backend/tests/Finora.Infrastructure.Tests/TestResults/TestResults.trx
+          reporter: dotnet-trx

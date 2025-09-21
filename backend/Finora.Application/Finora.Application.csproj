@@ -20,6 +20,7 @@
     <Folder Include="Controllers/Categories/" />
     <Folder Include="Controllers/Goal/" />
     <Folder Include="Controllers/StaticAdviceRule/" />
+    <Folder Include="Controllers/User/Get/" />
   </ItemGroup>
 
 </Project>

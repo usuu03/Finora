@@ -11,7 +11,6 @@ namespace Finora.WebApi.Controllers;
 public class TransactionController : ApiControllerBase
 {
     [HttpGet]
-    [AllowAnonymous]
     public Task<IActionResult> Get([FromQuery] GetAllTransactionsQuery query) => Send(query);
 
     [HttpGet("{id}")]
@@ -21,9 +20,9 @@ public class TransactionController : ApiControllerBase
     public Task<IActionResult> Upsert([FromBody] UpsertTransactionCommand command)
         => Send(command);
 
-   [HttpDelete("{id:guid}")]
-   public Task<IActionResult> Delete([FromRoute] Guid id)
-    => Send(new DeleteTransactionCommand(new List<Guid> { id }));
+    [HttpDelete("{id:guid}")]
+    public Task<IActionResult> Delete([FromRoute] Guid id)
+     => Send(new DeleteTransactionCommand(new List<Guid> { id }));
 
 
     [HttpDelete("delete")]

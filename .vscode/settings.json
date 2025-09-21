@@ -1,7 +1,89 @@
 {
-    "cSpell.words": [
-        "Finora"
-    ],
-     "typescript.preferences.importModuleSpecifier": "non-relative",
-  "javascript.preferences.importModuleSpecifier": "non-relative"
+	// If you want to untrack local changes to this file, run:
+	// git update-index --assume-unchanged .vscode/settings.json
+	// Or:
+	// git update-index --skip-worktree .vscode/settings.json
+	// C# Settings
+	"csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+	"dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+	"dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+	"csharp.inlayHints.enableInlayHintsForTypes": true,
+	"csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+	"dotnet.formatting.organizeImportsOnFormat": true,
+	// Tailwind
+	"tailwindCSS.experimental.configFile": "./frontend/Internal.Website/src/styles/index.css",
+	"tailwindCSS.classFunctions": [
+		"cva"
+	],
+	"tailwindCSS.experimental.classRegex": [
+		"[a-zA-Z]+ClassName=\"([^\"]*)\""
+	],
+	// Lint & Format
+	"biome.lsp.bin": "./frontend/Internal.Website/node_modules/@biomejs/biome/bin/biome",
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp",
+		"editor.codeActionsOnSave": [
+			"source.organizeImports",
+			"source.fixAll"
+		],
+		"editor.formatOnSave": true
+	},
+	// Typescript
+	"javascript.preferences.quoteStyle": "double",
+	"typescript.preferences.quoteStyle": "double",
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.inlayHints.variableTypes.enabled": true,
+	// "typescript.preferences.autoImportFileExcludePatterns": [
+	// 	"**/__types__/**"
+	// ],
+	// Project
+	"dotnet.defaultSolution": "./Orion.sln",
+	// To Do Tree
+	"todo-tree.filtering.excludeGlobs": [
+		"**/node_modules/*/**",
+		"**/*.template.ts"
+	],
+	// Coder
+	"remote.portsAttributes": {
+		"3000-6000": {
+			"onAutoForward": "ignore"
+		}
+	},
+	"editor.rulers": [
+		120
+	],
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"file": ".github/copilot-commit-instructions.md",
+		}
+	],
 }

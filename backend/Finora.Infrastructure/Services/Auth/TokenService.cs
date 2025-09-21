@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Text;
 using Finora.Application.Common.Interfaces;
 using Finora.Domain.Entities;
 using Finora.Infrastructure.Services.Auth.Models;
@@ -16,7 +17,7 @@ public sealed class TokenService : ITokenService
     public TokenService(JwtOptions options)
     {
         _options = options;
-        var key = new SymmetricSecurityKey(Convert.FromBase64String(_options.SigningKey));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SigningKey));
         _signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
     }
 
