@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {}
+    "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj": {}
   },
   "projects": {
-    "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
+    "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj",
+        "projectUniqueName": "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj",
         "projectName": "Finora.Application",
-        "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj",
+        "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Documents/Finora/backend/Finora.Application/obj/",
+        "outputPath": "/Users/User/Desktop/Finora/backend/Finora.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
-                "projectPath": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj"
+              "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
+                "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
+    "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+        "projectUniqueName": "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj",
         "projectName": "Finora.Domain",
-        "projectPath": "/Users/User/Documents/Finora/backend/Finora.Domain/Finora.Domain.csproj",
+        "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Domain/Finora.Domain.csproj",
         "packagesPath": "/Users/User/.nuget/packages/",
-        "outputPath": "/Users/User/Documents/Finora/backend/Finora.Domain/obj/",
+        "outputPath": "/Users/User/Desktop/Finora/backend/Finora.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/User/.nuget/NuGet/NuGet.Config"

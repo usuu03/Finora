@@ -3404,11 +3404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
+      "projectUniqueName": "/Users/User/Desktop/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
       "projectName": "Finora.Infrastructure",
-      "projectPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
+      "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Infrastructure/Finora.Infrastructure.csproj",
       "packagesPath": "/Users/User/.nuget/packages/",
-      "outputPath": "/Users/User/Documents/Finora/backend/Finora.Infrastructure/obj/",
+      "outputPath": "/Users/User/Desktop/Finora/backend/Finora.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/User/.nuget/NuGet/NuGet.Config"
@@ -3424,8 +3424,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj": {
-              "projectPath": "/Users/User/Documents/Finora/backend/Finora.Application/Finora.Application.csproj"
+            "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj": {
+              "projectPath": "/Users/User/Desktop/Finora/backend/Finora.Application/Finora.Application.csproj"
             }
           }
         }
